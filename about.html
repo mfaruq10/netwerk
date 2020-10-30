@@ -26,12 +26,10 @@
             background-color: #E5E5E5;
             border-radius: 50%;
             background-size: 50%;
-
-
         }
 
         .img-fix {
-            max-width: 93%;
+            max-width: 100%;
         }
 
         .poppins {
@@ -41,7 +39,7 @@
 
         #footer {
             position: relative;
-            top: -50px;
+            top: -30px;
             bottom: 0;
         }
 
@@ -56,6 +54,40 @@
 
         .fab {
             color: black !important;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url('assets/img/hamburger.svg') !important;
+        }
+
+        @media (min-width: 576px) {
+            .poppins {
+
+                margin-top: 30%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #footer {
+                top: 0px;
+                bottom: 0;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .pull-right {
+                float: none !important;
+            }
+
+            .elips {
+                margin-top: 20px;
+            }
+
+            .navbar-nav {
+                float: right;
+                text-align: end;
+                margin-right: 15px;
+            }
         }
     </style>
 </head>
@@ -77,10 +109,9 @@
             </div>
         </div>
     </nav>
-    <div class="container mt-5">
+    <div class="container">
         <div class="row">
-            <div class="col-4 ">
-
+            <div class="col-lg-4 col-12">
                 <p class="poppins font-weight-bold">
                     Extraordinary - Act not only as
                     your agency, but as YOUR PARTNER.
@@ -89,25 +120,26 @@
                     <br>
                     such as <span class="text-danger">OVO</span>
                 </p>
-                <small class="font-weight-light">We are happy to have you as part of us.
+                <small class="font-weight-light font-weight-bold">We are happy to have you as part of us.
                     Feel free to try our available line of products:
                     i2EXPO, Beonco, Surprize & Manna. </small>
-                <small class="font-weight-light text-success">Learn more about Our Products</small>
+                <small class="font-weight-light text-success font-weight-bold">Learn more about Our Products</small>
             </div>
-            <div class="col-8">
+            <div class="col-lg-8 col-12">
                 <div class="elips">
                     <img src="assets/img/hero.svg" alt="" class="img-fluid img-fix">
                 </div>
             </div>
         </div>
         <div id="footer">
+            <div class="pull-left mx-auto">
+                <small>2010-2020 | The Netwerk - Interactive, Creative Content & Technology Co.</small>
+            </div>
             <div class="pull-right ">
                 <a href="#"><i class="fab fa-facebook"></i></a> <a href="#" class="ml-2 mr-2"><i
                         class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-            <div class="pull-left">
-                <small>2010-2020 | The Netwerk - Interactive, Creative Content & Technology Co.</small>
-            </div>
+
         </div>
     </div>
 
